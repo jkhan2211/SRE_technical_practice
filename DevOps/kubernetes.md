@@ -93,7 +93,35 @@ They are container that helps the application running in the pod, perform some c
 This ensure, a common use cases, can be seperated and side car container that our deployment goes smooth, it will also remove complexity, smooth deploy, scale and manage the application. 
 
 ##### Question 6
-What is a side car container?
+We want to launch certain pod only specific node. These nodes should explicitly used only for this pod. Is it possible to control the deployment of pod such as given scenarios?
+
+##### Answer:
+- Yes this can be achieved as Taint in K8's
+- We can add taint, to a node:
+```
+kubectl taint nodes nodex key=value:Effect
+```
+- Taints are a property of nodes that push pods away if they don't tolerate this taint
+- Like labels, one or more Taints can be applied to a node
+- This means that the node must not accept any pod that does not tolerate all of these taints 
+
+##### Question 6
+How does the K8's scheduler quickly assign worker nodes for the pods? Explain the internal working of K8's scheduler 
+
+##### Answer:
+Scheduler provision pod on different worker nodes. What sheduler has is information, metadata about worker node health, this info is filtered, when pod comes for scheduling during cycle, co-releate the data. It is very easy and faster to provision pod in kubernetes 
+
+##### Question 6
+You have 10 nodes with 500GB of disk attached to each node. Let us say node disk should reach 85% usage; then pod we have deployed should get evicted and re-deployed on a node with better disk health. Explain if this can be done? 
+
+##### Answer:
+I am assuming, saving a paticular node, when reaches utilization, use kubelet this is a node level config we have to do. 
+Eviction hard and eviction soft
+Here we can config eviction threshold, memory available, Inode available
+Node has high utilization, qas methoda, paticular pod, once it decide which pod, termination will send this pod to shut down gracefully, if not force. Set up alerts for further debug
+
+
+
 
 
 
