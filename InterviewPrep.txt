@@ -37,4 +37,19 @@ Fri Oct 5
 
 
 ----------------------------------------
-Powershell - Ontario Gov
+Ontario Gov - Tech Stack
+Powershell 
+Python
+DevOps(CI/CD)
+Cloud Admin
+------------------------------------------
+Zynga Tech Stack
+Python
+DevOps
+Cloud Admin
+Shell
+Docker and Kubernetes
+
+Prep:
+Technical question
+Projects
