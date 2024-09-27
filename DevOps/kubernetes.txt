@@ -1,0 +1,114 @@
+ere are some common Kubernetes interview questions that you might encounter, covering various levels of complexity and topics like architecture, components, deployment strategies, troubleshooting, and more:
+
+Basic Kubernetes Questions:
+What is Kubernetes?
+
+Answer: Kubernetes is an open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications.
+What is a Kubernetes Pod?
+
+Answer: A pod is the smallest deployable unit in Kubernetes, which can consist of one or more containers that share the same network namespace and storage volumes.
+What is a Node in Kubernetes?
+
+Answer: A node is a physical or virtual machine that runs part of the application workload. Each node runs container runtime (e.g., Docker), kubelet, and kube-proxy.
+What is the role of the kubelet?
+
+Answer: The kubelet is an agent that runs on each node in the Kubernetes cluster. It ensures that containers are running in the pod and communicates with the Kubernetes control plane.
+What is kubectl?
+
+Answer: kubectl is the command-line tool used to interact with the Kubernetes API server. It allows you to manage Kubernetes resources like deployments, services, and pods.
+What is a Kubernetes Service?
+
+Answer: A service is an abstraction that defines a logical set of pods and a policy to access them. Services allow decoupling between client and pod discovery for load balancing and connectivity.
+What is a ConfigMap and how is it used?
+
+Answer: A ConfigMap is used to decouple environment-specific configuration from container images, allowing the same image to be reused across different environments with varying configurations.
+Intermediate Kubernetes Questions:
+What is the difference between a Deployment and a StatefulSet?
+
+Deployment: Handles stateless applications, providing features like rolling updates and scaling. All pods are identical.
+StatefulSet: Manages stateful applications, maintaining unique identities (stable network IDs, persistent storage) for each pod.
+What is a DaemonSet?
+
+Answer: A DaemonSet ensures that a copy of a pod runs on all (or some) nodes in the cluster. Examples include logging agents or monitoring daemons.
+How does Kubernetes handle service discovery?
+
+Answer: Kubernetes supports service discovery through DNS and environment variables. Each service is assigned a DNS name and is available via a cluster-internal IP.
+What are Kubernetes Namespaces, and why are they used?
+
+Answer: Namespaces provide a mechanism to divide cluster resources between multiple users. They are used for organizing resources and avoiding name collisions between teams or applications.
+What is a PersistentVolume (PV) and PersistentVolumeClaim (PVC)?
+
+PersistentVolume (PV): A piece of storage provisioned by the cluster administrator.
+PersistentVolumeClaim (PVC): A request for storage by a user that can consume the PV.
+How does Horizontal Pod Autoscaling (HPA) work?
+
+Answer: HPA automatically scales the number of pod replicas based on observed CPU utilization or other select metrics. It adjusts the deployment or replica set to meet the resource demand.
+What is Helm, and how is it used in Kubernetes?
+
+Answer: Helm is a package manager for Kubernetes that allows you to define, install, and upgrade complex Kubernetes applications using reusable and versioned "Helm charts."
+Advanced Kubernetes Questions:
+How would you troubleshoot a pod in CrashLoopBackOff?
+
+Steps to troubleshoot:
+Use kubectl describe pod <pod-name> to check events and reason for the restart.
+Use kubectl logs <pod-name> to view the container logs.
+Check resources (e.g., memory, CPU limits), health probes, or possible configuration issues.
+Explain how Kubernetes networking works.
+
+Answer: Kubernetes networking ensures that:
+Pods within a node can communicate without NAT.
+Pods can communicate across nodes without NAT.
+Nodes can communicate with any pod.
+Services allow external clients to access pods via LoadBalancer or NodePort.
+What is the role of an Ingress in Kubernetes?
+
+Answer: Ingress manages external access to services within a Kubernetes cluster, typically HTTP or HTTPS. It can provide load balancing, SSL termination, and name-based virtual hosting.
+How does the Kubernetes Scheduler work?
+
+Answer: The scheduler assigns pods to nodes based on resource requirements, affinity/anti-affinity rules, node taints and tolerations, and other policies to ensure optimal placement.
+What is a Taint and Toleration in Kubernetes?
+
+Taint: A property that can be applied to a node to repel certain pods from being scheduled on it.
+Toleration: Allows certain pods to "tolerate" the node's taint and be scheduled despite the taint.
+What are some strategies for performing a zero-downtime deployment in Kubernetes?
+
+Rolling Updates: Gradually update instances while keeping the application available.
+Blue-Green Deployment: Maintain two environments and switch traffic between them.
+Canary Deployment: Deploy a small portion of traffic to the new version to test changes.
+Kubernetes Security Questions:
+How do you secure Kubernetes clusters?
+
+Answers may include:
+Enable Role-Based Access Control (RBAC).
+Use network policies to control communication between pods.
+Use secrets management for sensitive data.
+Regularly update Kubernetes components to fix security vulnerabilities.
+Enable pod security policies and apply least privilege principles.
+What is RBAC in Kubernetes?
+
+Answer: Role-Based Access Control (RBAC) defines permissions for users or services in the Kubernetes cluster. It restricts access to resources based on roles and role bindings.
+How are Kubernetes Secrets managed, and what are the best practices?
+
+Secrets store sensitive information (e.g., passwords, tokens) in base64-encoded form.
+Best practices include using external secret management systems (like HashiCorp Vault) and restricting access via RBAC.
+What are Pod Security Policies (PSP)?
+
+Answer: PSPs are deprecated in newer Kubernetes versions but were used to enforce security constraints on pods (e.g., preventing privileged containers, enforcing user IDs).
+What is the difference between a ClusterRole and a Role?
+
+Role: Defines access control within a specific namespace.
+ClusterRole: Defines access control cluster-wide or across namespaces.
+Scenario-Based Questions:
+How would you implement canary deployment using Kubernetes?
+
+Answer: Use a deployment strategy that creates a second deployment with a small percentage of traffic (e.g., 5%) routed to the new version using a service or ingress. Monitor it and gradually increase the traffic.
+How would you scale a Kubernetes application?
+
+Answer: Use Horizontal Pod Autoscaler (HPA) for automatic scaling based on CPU/memory usage. Alternatively, use kubectl scale to manually scale replicas.
+Your Kubernetes cluster is running slowly, how would you identify the issue?
+
+Answer:
+Use kubectl top nodes/pods to check for resource bottlenecks.
+Analyze pod logs (kubectl logs) and events (kubectl describe).
+Check for high memory/CPU consumption, network latency, or disk I/O issues.
+These questions cover a wide range of Kubernetes topics from basic concepts to more advanced and security-related issues. Interviewers may also focus on real-world scenarios, so preparing with hands-on Kubernetes experience is critical.

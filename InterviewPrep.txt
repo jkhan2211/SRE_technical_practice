@@ -1,0 +1,40 @@
+Using quiz app I am going to randomize interview question, maybe by domain too.
+
+Interview Domain
+Python
+Docker
+Kubernetes
+Linux
+Bash
+General DevOps- Troubleshooting
+
+For verbal question: 
+1. Quizlet, generate random question each domain
+2. Convert the question, text to speech
+3. Based on question, I answer and record my voice. 
+4. Convert speech to text of my response
+5. Add the actual answer, with given answer, to chatgpt, (ask for rating)
+6. Track the score below
+
+---------------------------------------------------------------------------------------------
+
+For coding question: 
+1. Quizlet, generate random question each domain
+2. Convert the question, text to speech
+3. Based on question, I answer and record my voice. 
+4. Convert speech to text of my response
+5. Add the actual answer, with given answer, to chatgpt, (ask for rating)
+6. Add the actual answer, with given answer, to chatgpt, (ask for rating)- code
+7. Track the score below
+
+Tracking
+Mon Sep 30
+Tues Oct 1
+Tues Oct 2
+Wed Oct 3
+Thurs Oct 4
+Fri Oct 5
+
+
+----------------------------------------
+Powershell - Ontario Gov

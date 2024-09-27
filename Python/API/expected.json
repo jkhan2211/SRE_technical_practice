@@ -1,0 +1,324 @@
+{
+    "breed": [
+        {"affenpinscher": null},
+        {
+            "african": null
+        },
+        {"airedale": null},
+        {"akita": null},
+        {"appenzeller": null},
+        {
+            "australian": [
+                {"breed1": "kelpie"},
+                {"breed2": "shepherd"}
+            ]
+        },
+        {
+            "bakharwal": [
+                {"breed1": "indian"}
+            ]
+        },
+        {"basenji": null},
+        {"beagle": null},
+        {"bluetick": null},
+        {"borzoi": null},
+        {"bouvier": null},
+        {"boxer": null},
+        {"brabancon": null},
+        {"briard": null},
+        {
+            "buhund": [
+                {"breed1": "norwegian"}
+            ]
+        },
+        {
+            "bulldog": [
+                {"breed1": "boston"},
+                {"breed2": "english"},
+                {"breed3": "french"}
+            ]
+        },
+        {
+            "bullterrier": [
+                {"breed1": "staffordshire"}
+            ]
+        },
+        {
+            "cattledog": [
+                {"breed1": "australian"}
+            ]
+        },
+        {"cavapoo": null},
+        {"chihuahua": null},
+        {
+            "chippiparai": [
+                {"breed1": "indian"}
+            ]
+        },
+        {"chow": null},
+        {"clumber": null},
+        {"cockapoo": null},
+        {
+            "collie": [
+                {"breed1": "border"}
+            ]
+        },
+        {"coonhound": null},
+        {
+            "corgi": [
+                {"breed1": "cardigan"}
+            ]
+        },
+        {"cotondetulear": null},
+        {"dachshund": null},
+        {"dalmatian": null},
+        {
+            "dane": [
+                {"breed1": "great"}
+            ]
+        },
+        {
+            "danish": [
+                {"breed1": "swedish"}
+            ]
+        },
+        {
+            "deerhound": [
+                {"breed1": "scottish"}
+            ]
+        },
+        {"dhole": null},
+        {"dingo": null},
+        {"doberman": null},
+        {
+            "elkhound": [
+                {"breed1": "norwegian"}
+            ]
+        },
+        {"entlebucher": null},
+        {"eskimo": null},
+        {
+            "finnish": [
+                {"breed1": "lapphund"}
+            ]
+        },
+        {
+            "frise": [
+                {"breed1": "bichon"}
+            ]
+        },
+        {
+            "gaddi": [
+                {"breed1": "indian"}
+            ]
+        },
+        {"germanshepherd": null},
+        {
+            "greyhound": [
+                {"breed1": "indian"},
+                {"breed2": "italian"}
+            ]
+        },
+        {"groenendael": null},
+        {"havanese": null},
+        {
+            "hound": [
+                {"breed1": "afghan"},
+                {"breed2": "basset"},
+                {"breed3": "blood"},
+                {"breed4": "english"},
+                {"breed5": "ibizan"},
+                {"breed6": "plott"},
+                {"breed7": "walker"}
+            ]
+        },
+        {"husky": null},
+        {"keeshond": null},
+        {"kelpie": null},
+        {"kombai": null},
+        {"komondor": null},
+        {"kuvasz": null},
+        {"labradoodle": null},
+        {"labrador": null},
+        {"leonberg": null},
+        {"lhasa": null},
+        {"malamute": null},
+        {"malinois": null},
+        {"maltese": null},
+        {
+            "mastiff": [
+                {"breed1": "bull"},
+                {"breed2": "english"},
+                {"breed3": "indian"},
+                {"breed4": "tibetan"}
+            ]
+        },
+        {"mexicanhairless": null},
+        {"mix": null},
+        {
+            "mountain": [
+                {"breed1": "bernese"},
+                {"breed2": "swiss"}
+            ]
+        },
+        {
+            "mudhol": [
+                {"breed1": "indian"}
+            ]
+        },
+        {"newfoundland": null},
+        {"otterhound": null},
+        {
+            "ovcharka": [
+                {"breed1": "caucasian"}
+            ]
+        },
+        {"papillon": null},
+        {
+            "pariah": [
+                {"breed1": "indian"}
+            ]
+        },
+        {"pekinese": null},
+        {"pembroke": null},
+        {
+            "pinscher": [
+                {"breed1": "miniature"}
+            ]
+        },
+        {"pitbull": null},
+        {
+            "pointer": [
+                {"breed1": "german"},
+                {"breed2": "germanlonghair"}
+            ]
+        },
+        {"pomeranian": null},
+        {
+            "poodle": [
+                {"breed1": "medium"},
+                {"breed2": "miniature"},
+                {"breed3": "standard"},
+                {"breed4": "toy"}
+            ]
+        },
+        {"pug": null},
+        {"puggle": null},
+        {"pyrenees": null},
+        {
+            "rajapalayam": [
+                {"breed1": "indian"}
+            ]
+        },
+        {"redbone": null},
+        {
+            "retriever": [
+                {"breed1": "chesapeake"},
+                {"breed2": "curly"},
+                {"breed3": "flatcoated"},
+                {"breed4": "golden"}
+            ]
+        },
+        {
+            "ridgeback": [
+                {"breed1": "rhodesian"}
+            ]
+        },
+        {"rottweiler": null},
+        {"saluki": null},
+        {"samoyed": null},
+        {"schipperke": null},
+        {
+            "schnauzer": [
+                {"breed1": "giant"},
+                {"breed2": "miniature"}
+            ]
+        },
+        {
+            "segugio": [
+                {"breed1": "italian"}
+            ]
+        },
+        {
+            "setter": [
+                {"breed1": "english"},
+                {"breed2": "gordon"},
+                {"breed3": "irish"}
+            ]
+        },
+        {"sharpei": null},
+        {
+            "sheepdog": [
+                {"breed1": "english"},
+                {"breed2": "indian"},
+                {"breed3": "shetland"}
+            ]
+        },
+        {"shiba": null},
+        {"shihtzu": null},
+        {
+            "spaniel": [
+                {"breed1": "blenheim"},
+                {"breed2": "brittany"},
+                {"breed3": "cocker"},
+                {"breed4": "irish"},
+                {"breed5": "japanese"},
+                {"breed6": "sussex"},
+                {"breed7": "welsh"}
+            ]
+        },
+        {
+            "spitz": [
+                {"breed1": "indian"},
+                {"breed2": "japanese"}
+            ]
+        },
+        {
+            "springer": [
+                {"breed1": "english"}
+            ]
+        },
+        {"stbernard": null},
+        {
+            "terrier": [
+                {"breed1": "american"},
+                {"breed2": "australian"},
+                {"breed3": "bedlington"},
+                {"breed4": "border"},
+                {"breed5": "cairn"},
+                {"breed6": "dandie"},
+                {"breed7": "fox"},
+                {"breed8": "irish"},
+                {"breed9": "kerryblue"},
+                {"breed10": "lakeland"},
+                {"breed11": "norfolk"},
+                {"breed12": "norwich"},
+                {"breed13": "patterdale"},
+                {"breed14": "russell"},
+                {"breed15": "scottish"},
+                {"breed16": "sealyham"},
+                {"breed17": "silky"},
+                {"breed18": "tibetan"},
+                {"breed19": "toy"},
+                {"breed20": "welsh"},
+                {"breed21": "westhighland"},
+                {"breed22": "wheaten"},
+                {"breed23": "yorkshire"}
+            ]
+        },
+        {"tervuren": null},
+        {"vizsla": null},
+        {
+            "waterdog": [
+                {"breed1": "spanish"}
+            ]
+        },
+        {"weimaraner": null},
+        {"whippet": null},
+        {
+            "wolfhound": [
+                {"breed1": "irish"}
+            ]
+        }
+    ]
+}

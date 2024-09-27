@@ -97,6 +97,10 @@ CMD["This is entrypoint]
 - Either one of them are suggested for best practice 
 - Using both of them in the same dockerfile is also possible
 
+In short:
+
+ENTRYPOINT = command you want to always run.
+CMD = default arguments or command that can be overridden.
 
 ##### Question 6
 Given 2 different docker file below. Which one do you think will have lesser size when built?
