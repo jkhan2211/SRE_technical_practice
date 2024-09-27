@@ -95,5 +95,6 @@ Like (wildcards): ```-like "*pattern*"```
 ## Example Commands
 Get disk information: ````Get-PSDrive```
 Get services starting with "Win": ```Get-Service | Where-Object { $_.Name -like "Win*" }```
-List processes consuming more than 100MB of memory: ```Get-Process | Where-Object { $_.WS -gt 100MB }```
+List processes consuming more than 100MB of memory: 
+```Get-Process | Where-Object { $_.WS -gt 100MB }```
 
